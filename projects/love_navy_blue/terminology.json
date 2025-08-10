@@ -1,0 +1,231 @@
+{
+  "project_specific_terms": {
+    "蓝刃突击队": {
+      "en": "Blue Blade Assault Team",
+      "ja": "ブルーブレード突撃隊",
+      "ko": "블루 블레이드 돌격대",
+      "th": "หน่วยจู่โจมใบมีดสีน้ำเงิน",
+      "vi": "Đội Tấn Công Lưỡi Dao Xanh",
+      "id": "Tim Serbu Pisau Biru",
+      "ms": "Pasukan Serangan Pisau Biru",
+      "es": "Equipo de Asalto Hoja Azul",
+      "pt": "Equipe de Assalto Lâmina Azul",
+      "ar": "فريق الهجوم النصل الأزرق",
+      "context": "特种作战单位名称",
+      "notes": "保持专有名词的威严感和专业性"
+    },
+    "二号预案": {
+      "en": "Plan B",
+      "ja": "第二案",
+      "ko": "2호 계획",
+      "th": "แผนที่ 2",
+      "vi": "Phương án số 2",
+      "id": "Rencana Nomor 2",
+      "ms": "Rancangan Nombor 2",
+      "es": "Plan Número 2",
+      "pt": "Plano Número 2",
+      "ar": "الخطة رقم 2",
+      "context": "军事作战计划代号",
+      "notes": "军事术语，需体现紧急性和专业性"
+    },
+    "海军陆战队": {
+      "en": "Marine Corps",
+      "ja": "海兵隊",
+      "ko": "해병대",
+      "th": "นาวิกโยธิน",
+      "vi": "Thủy quân lục chiến",
+      "id": "Korps Marinir",
+      "ms": "Kor Marin",
+      "es": "Infantería de Marina",
+      "pt": "Corpo de Fuzileiros Navais",
+      "ar": "مشاة البحرية",
+      "context": "军种名称",
+      "notes": "使用国际标准军事译名"
+    },
+    "登陆艇": {
+      "en": "Landing Craft",
+      "ja": "上陸艇",
+      "ko": "상륙정",
+      "th": "เรือขึ้นบก",
+      "vi": "Tàu đổ bộ",
+      "id": "Kapal Pendarat",
+      "ms": "Bot Pendaratan",
+      "es": "Lancha de Desembarco",
+      "pt": "Embarcação de Desembarque",
+      "ar": "مركبة الإنزال",
+      "context": "军用船只",
+      "notes": "军事装备专业术语"
+    }
+  },
+  "military_terms": {
+    "参谋长": {
+      "en": "Chief of Staff",
+      "ja": "参謀長",
+      "ko": "참모장",
+      "th": "หัวหน้าเสนาธิการ",
+      "vi": "Tham mưu trưởng",
+      "id": "Kepala Staf",
+      "ms": "Ketua Staf",
+      "es": "Jefe de Estado Mayor",
+      "pt": "Chefe do Estado-Maior",
+      "ar": "رئيس الأركان",
+      "rank": "高级军官",
+      "formality": "very_high"
+    },
+    "司令": {
+      "en": "Commander",
+      "ja": "司令官",
+      "ko": "사령관",
+      "th": "ผู้บัญชาการ",
+      "vi": "Tư lệnh",
+      "id": "Komandan",
+      "ms": "Komander",
+      "es": "Comandante",
+      "pt": "Comandante",
+      "ar": "القائد",
+      "rank": "最高指挥官",
+      "formality": "very_high"
+    },
+    "旅长": {
+      "en": "Brigade Commander",
+      "ja": "旅団長",
+      "ko": "여단장",
+      "th": "ผู้บัญชาการกองพล",
+      "vi": "Lữ trưởng",
+      "id": "Komandan Brigade",
+      "ms": "Komander Briged",
+      "es": "Comandante de Brigada",
+      "pt": "Comandante de Brigada",
+      "ar": "قائد اللواء",
+      "rank": "旅级指挥官",
+      "formality": "high"
+    },
+    "队长": {
+      "en": "Captain",
+      "ja": "隊長",
+      "ko": "대장",
+      "th": "หัวหน้าทีม",
+      "vi": "Đội trưởng",
+      "id": "Kapten",
+      "ms": "Kapten",
+      "es": "Capitán",
+      "pt": "Capitão",
+      "ar": "القائد",
+      "rank": "基层指挥官",
+      "formality": "medium"
+    },
+    "中队长": {
+      "en": "Squadron Leader",
+      "ja": "中隊長",
+      "ko": "중대장",
+      "th": "หัวหน้ากองร้อย",
+      "vi": "Trung đội trưởng",
+      "id": "Komandan Skuadron",
+      "ms": "Komander Skuadron",
+      "es": "Comandante de Escuadrón",
+      "pt": "Comandante de Esquadrão",
+      "ar": "قائد السرب",
+      "rank": "中队指挥官",
+      "formality": "medium"
+    },
+    "狙击手": {
+      "en": "Sniper",
+      "ja": "狙撃手",
+      "ko": "저격수",
+      "th": "มือปืนซุ่มยิง",
+      "vi": "Xạ thủ bắn tỉa",
+      "id": "Penembak Jitu",
+      "ms": "Penembak Tepat",
+      "es": "Francotirador",
+      "pt": "Atirador de Elite",
+      "ar": "قناص",
+      "specialty": "特种作战",
+      "formality": "medium"
+    }
+  },
+  "cultural_terms": {
+    "军嫂": {
+      "en": "Military Wife",
+      "ja": "軍人の妻",
+      "ko": "군인 아내",
+      "th": "ภรรยาทหาร",
+      "vi": "Vợ quân nhân",
+      "id": "Istri Tentara",
+      "ms": "Isteri Tentera",
+      "es": "Esposa Militar",
+      "pt": "Esposa Militar",
+      "ar": "زوجة عسكري",
+      "explanation": "军人配偶的特殊身份",
+      "cultural_significance": "体现军人家庭的奉献精神"
+    },
+    "战友": {
+      "en": "Comrade-in-arms",
+      "ja": "戦友",
+      "ko": "전우",
+      "th": "เพื่อนร่วมรบ",
+      "vi": "Đồng đội",
+      "id": "Rekan Seperjuangan",
+      "ms": "Rakan Seperjuangan",
+      "es": "Compañero de Armas",
+      "pt": "Companheiro de Armas",
+      "ar": "رفيق السلاح",
+      "explanation": "军人间的特殊情谊",
+      "cultural_significance": "体现军人间的深厚友谊和信任"
+    },
+    "首长": {
+      "en": "Chief/Commander",
+      "ja": "長官",
+      "ko": "장관",
+      "th": "หัวหน้า",
+      "vi": "Trưởng",
+      "id": "Pimpinan",
+      "ms": "Ketua",
+      "es": "Jefe",
+      "pt": "Chefe",
+      "ar": "الرئيس",
+      "explanation": "对上级的尊称",
+      "usage": "下级对上级的正式称呼"
+    }
+  },
+  "professional_terms": {
+    "记者": {
+      "en": "Journalist/Reporter",
+      "ja": "記者",
+      "ko": "기자",
+      "th": "นักข่าว",
+      "vi": "Phóng viên",
+      "id": "Wartawan",
+      "ms": "Wartawan",
+      "es": "Periodista",
+      "pt": "Jornalista",
+      "ar": "صحفي",
+      "field": "新闻媒体",
+      "characteristics": "职业敏感性、追求真相"
+    },
+    "医学生": {
+      "en": "Medical Student",
+      "ja": "医学生",
+      "ko": "의대생",
+      "th": "นักศึกษาแพทย์",
+      "vi": "Sinh viên y khoa",
+      "id": "Mahasiswa Kedokteran",
+      "ms": "Pelajar Perubatan",
+      "es": "Estudiante de Medicina",
+      "pt": "Estudante de Medicina",
+      "ar": "طالب طب",
+      "field": "医疗卫生",
+      "characteristics": "专业性强、救死扶伤"
+    }
+  },
+  "translation_preferences": {
+    "tone": "正式而不失温度，体现军人的严谨和人情味",
+    "formality": "根据军队等级制度调整正式程度",
+    "localization": "保持中国军队特色，适度本土化",
+    "consistency_rules": [
+      "军事称谓必须准确对应目标语言的军事体系",
+      "人物姓名保持一致的音译方式",
+      "专业术语优先使用国际标准译名",
+      "情感表达要符合各语言文化特点"
+    ]
+  }
+}

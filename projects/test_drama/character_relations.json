@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_id": "test_drama",
+    "project_title": "测试剧集",
+    "genre": "现代剧",
+    "description": "用于测试的演示项目"
+  },
+  "characters": {
+    "主角1": {
+      "name_translations": {
+        "en": "Protagonist1",
+        "ja": "主人公1",
+        "ko": "주인공1",
+        "th": "ตัวเอก1",
+        "vi": "Nhân vật chính 1",
+        "id": "Tokoh Utama 1",
+        "ms": "Watak Utama 1",
+        "es": "Protagonista 1",
+        "pt": "Protagonista 1",
+        "ar": "البطل الأول"
+      },
+      "role": "主要角色",
+      "profession": "职业待填写",
+      "relationships": {
+        "主角2": "关系待定义"
+      },
+      "titles": [
+        "称谓1",
+        "称谓2"
+      ],
+      "personality_traits": [
+        "性格特点1",
+        "性格特点2"
+      ],
+      "speaking_style": "说话风格描述"
+    },
+    "主角2": {
+      "name_translations": {
+        "en": "Protagonist2",
+        "ja": "主人公2",
+        "ko": "주인공2",
+        "th": "ตัวเอก2",
+        "vi": "Nhân vật chính 2",
+        "id": "Tokoh Utama 2",
+        "ms": "Watak Utama 2",
+        "es": "Protagonista 2",
+        "pt": "Protagonista 2",
+        "ar": "البطل الثاني"
+      },
+      "role": "主要角色",
+      "profession": "职业待填写",
+      "relationships": {
+        "主角1": "关系待定义"
+      },
+      "titles": [
+        "称谓1",
+        "称谓2"
+      ],
+      "personality_traits": [
+        "性格特点1",
+        "性格特点2"
+      ],
+      "speaking_style": "说话风格描述"
+    }
+  },
+  "cultural_context": {
+    "setting": "背景设定",
+    "time_period": "时代背景",
+    "cultural_notes": [
+      "文化要点1",
+      "文化要点2"
+    ],
+    "social_hierarchy": {
+      "description": "社会等级描述",
+      "levels": [
+        "等级1",
+        "等级2",
+        "等级3"
+      ]
+    }
+  },
+  "relationship_types": {
+    "family": {
+      "父子": {
+        "formality": "high",
+        "respect_level": "high"
+      },
+      "母女": {
+        "formality": "medium",
+        "respect_level": "medium"
+      },
+      "夫妻": {
+        "formality": "low",
+        "respect_level": "equal"
+      }
+    },
+    "professional": {
+      "上下级": {
+        "formality": "high",
+        "respect_level": "high"
+      },
+      "同事": {
+        "formality": "medium",
+        "respect_level": "equal"
+      },
+      "合作伙伴": {
+        "formality": "medium",
+        "respect_level": "equal"
+      }
+    },
+    "social": {
+      "朋友": {
+        "formality": "low",
+        "respect_level": "equal"
+      },
+      "恋人": {
+        "formality": "low",
+        "respect_level": "equal"
+      },
+      "陌生人": {
+        "formality": "high",
+        "respect_level": "neutral"
+      }
+    }
+  }
+}

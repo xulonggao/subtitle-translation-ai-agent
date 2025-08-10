@@ -1,0 +1,41 @@
+# Strands Agent SDK
+strands-agents>=0.1.0
+strands-agents-tools>=0.1.0
+
+# AWS SDK
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+pydantic>=2.5.0
+
+# File Processing
+chardet>=5.2.0
+python-multipart>=0.0.6
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+
+# Development Tools
+black>=23.9.0
+flake8>=6.1.0
+mypy>=1.6.0
+
+# Logging and Monitoring
+structlog>=23.2.0
+prometheus-client>=0.19.0
+
+# Utilities
+python-dotenv>=1.0.0
+click>=8.1.0
+tqdm>=4.66.0
+aiofiles>=23.2.0

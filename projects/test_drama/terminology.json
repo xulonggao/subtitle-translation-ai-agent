@@ -1,0 +1,73 @@
+{
+  "project_specific_terms": {
+    "专有名词1": {
+      "en": "Proper Noun 1",
+      "ja": "固有名詞1",
+      "ko": "고유명사1",
+      "th": "คำเฉพาะ1",
+      "vi": "Danh từ riêng 1",
+      "id": "Istilah Khusus 1",
+      "ms": "Istilah Khas 1",
+      "es": "Término Específico 1",
+      "pt": "Termo Específico 1",
+      "ar": "المصطلح الخاص 1",
+      "context": "使用场景描述",
+      "notes": "翻译注意事项"
+    },
+    "专有名词2": {
+      "en": "Proper Noun 2",
+      "ja": "固有名詞2",
+      "ko": "고유명사2",
+      "th": "คำเฉพาะ2",
+      "vi": "Danh từ riêng 2",
+      "id": "Istilah Khusus 2",
+      "ms": "Istilah Khas 2",
+      "es": "Término Específico 2",
+      "pt": "Termo Específico 2",
+      "ar": "المصطلح الخاص 2",
+      "context": "使用场景描述",
+      "notes": "翻译注意事项"
+    }
+  },
+  "cultural_terms": {
+    "文化词汇1": {
+      "en": "Cultural Term 1",
+      "ja": "文化用語1",
+      "ko": "문화용어1",
+      "th": "คำศัพท์วัฒนธรรม1",
+      "vi": "Thuật ngữ văn hóa 1",
+      "id": "Istilah Budaya 1",
+      "ms": "Istilah Budaya 1",
+      "es": "Término Cultural 1",
+      "pt": "Termo Cultural 1",
+      "ar": "المصطلح الثقافي 1",
+      "explanation": "文化背景解释",
+      "adaptation_notes": "本土化建议"
+    }
+  },
+  "professional_terms": {
+    "行业术语1": {
+      "en": "Professional Term 1",
+      "ja": "専門用語1",
+      "ko": "전문용어1",
+      "th": "คำศัพท์เฉพาะทาง1",
+      "vi": "Thuật ngữ chuyên môn 1",
+      "id": "Istilah Profesional 1",
+      "ms": "Istilah Profesional 1",
+      "es": "Término Profesional 1",
+      "pt": "Termo Profissional 1",
+      "ar": "المصطلح المهني 1",
+      "field": "专业领域",
+      "definition": "术语定义"
+    }
+  },
+  "translation_preferences": {
+    "tone": "翻译语调偏好",
+    "formality": "正式程度偏好",
+    "localization": "本土化程度",
+    "consistency_rules": [
+      "一致性规则1",
+      "一致性规则2"
+    ]
+  }
+}

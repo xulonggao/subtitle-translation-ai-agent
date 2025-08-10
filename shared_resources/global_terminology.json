@@ -1,0 +1,228 @@
+{
+  "common_titles": {
+    "先生": {
+      "en": "Mr.",
+      "ja": "さん",
+      "ko": "씨",
+      "th": "คุณ",
+      "vi": "Ông",
+      "id": "Bapak",
+      "ms": "Encik",
+      "es": "Señor",
+      "pt": "Senhor",
+      "ar": "السيد"
+    },
+    "女士": {
+      "en": "Ms./Mrs.",
+      "ja": "さん",
+      "ko": "씨",
+      "th": "คุณ",
+      "vi": "Bà",
+      "id": "Ibu",
+      "ms": "Puan",
+      "es": "Señora",
+      "pt": "Senhora",
+      "ar": "السيدة"
+    },
+    "小姐": {
+      "en": "Miss",
+      "ja": "さん",
+      "ko": "양",
+      "th": "คุณ",
+      "vi": "Cô",
+      "id": "Nona",
+      "ms": "Cik",
+      "es": "Señorita",
+      "pt": "Senhorita",
+      "ar": "الآنسة"
+    }
+  },
+  "family_relations": {
+    "父亲": {
+      "en": "Father",
+      "ja": "父",
+      "ko": "아버지",
+      "th": "พ่อ",
+      "vi": "Cha",
+      "id": "Ayah",
+      "ms": "Bapa",
+      "es": "Padre",
+      "pt": "Pai",
+      "ar": "الأب"
+    },
+    "母亲": {
+      "en": "Mother",
+      "ja": "母",
+      "ko": "어머니",
+      "th": "แม่",
+      "vi": "Mẹ",
+      "id": "Ibu",
+      "ms": "Ibu",
+      "es": "Madre",
+      "pt": "Mãe",
+      "ar": "الأم"
+    },
+    "儿子": {
+      "en": "Son",
+      "ja": "息子",
+      "ko": "아들",
+      "th": "ลูกชาย",
+      "vi": "Con trai",
+      "id": "Anak laki-laki",
+      "ms": "Anak lelaki",
+      "es": "Hijo",
+      "pt": "Filho",
+      "ar": "الابن"
+    },
+    "女儿": {
+      "en": "Daughter",
+      "ja": "娘",
+      "ko": "딸",
+      "th": "ลูกสาว",
+      "vi": "Con gái",
+      "id": "Anak perempuan",
+      "ms": "Anak perempuan",
+      "es": "Hija",
+      "pt": "Filha",
+      "ar": "الابنة"
+    }
+  },
+  "common_expressions": {
+    "你好": {
+      "en": "Hello",
+      "ja": "こんにちは",
+      "ko": "안녕하세요",
+      "th": "สวัสดี",
+      "vi": "Xin chào",
+      "id": "Halo",
+      "ms": "Hello",
+      "es": "Hola",
+      "pt": "Olá",
+      "ar": "مرحبا"
+    },
+    "谢谢": {
+      "en": "Thank you",
+      "ja": "ありがとう",
+      "ko": "감사합니다",
+      "th": "ขอบคุณ",
+      "vi": "Cảm ơn",
+      "id": "Terima kasih",
+      "ms": "Terima kasih",
+      "es": "Gracias",
+      "pt": "Obrigado",
+      "ar": "شكرا"
+    },
+    "对不起": {
+      "en": "Sorry",
+      "ja": "すみません",
+      "ko": "죄송합니다",
+      "th": "ขอโทษ",
+      "vi": "Xin lỗi",
+      "id": "Maaf",
+      "ms": "Maaf",
+      "es": "Lo siento",
+      "pt": "Desculpe",
+      "ar": "آسف"
+    },
+    "是": {
+      "en": "Yes",
+      "ja": "はい",
+      "ko": "네",
+      "th": "ใช่",
+      "vi": "Vâng",
+      "id": "Ya",
+      "ms": "Ya",
+      "es": "Sí",
+      "pt": "Sim",
+      "ar": "نعم"
+    },
+    "不": {
+      "en": "No",
+      "ja": "いいえ",
+      "ko": "아니요",
+      "th": "ไม่",
+      "vi": "Không",
+      "id": "Tidak",
+      "ms": "Tidak",
+      "es": "No",
+      "pt": "Não",
+      "ar": "لا"
+    }
+  },
+  "time_expressions": {
+    "现在": {
+      "en": "Now",
+      "ja": "今",
+      "ko": "지금",
+      "th": "ตอนนี้",
+      "vi": "Bây giờ",
+      "id": "Sekarang",
+      "ms": "Sekarang",
+      "es": "Ahora",
+      "pt": "Agora",
+      "ar": "الآن"
+    },
+    "今天": {
+      "en": "Today",
+      "ja": "今日",
+      "ko": "오늘",
+      "th": "วันนี้",
+      "vi": "Hôm nay",
+      "id": "Hari ini",
+      "ms": "Hari ini",
+      "es": "Hoy",
+      "pt": "Hoje",
+      "ar": "اليوم"
+    },
+    "明天": {
+      "en": "Tomorrow",
+      "ja": "明日",
+      "ko": "내일",
+      "th": "พรุ่งนี้",
+      "vi": "Ngày mai",
+      "id": "Besok",
+      "ms": "Esok",
+      "es": "Mañana",
+      "pt": "Amanhã",
+      "ar": "غدا"
+    }
+  },
+  "emotions": {
+    "高兴": {
+      "en": "Happy",
+      "ja": "嬉しい",
+      "ko": "기쁘다",
+      "th": "มีความสุข",
+      "vi": "Vui",
+      "id": "Senang",
+      "ms": "Gembira",
+      "es": "Feliz",
+      "pt": "Feliz",
+      "ar": "سعيد"
+    },
+    "难过": {
+      "en": "Sad",
+      "ja": "悲しい",
+      "ko": "슬프다",
+      "th": "เศร้า",
+      "vi": "Buồn",
+      "id": "Sedih",
+      "ms": "Sedih",
+      "es": "Triste",
+      "pt": "Triste",
+      "ar": "حزين"
+    },
+    "生气": {
+      "en": "Angry",
+      "ja": "怒っている",
+      "ko": "화나다",
+      "th": "โกรธ",
+      "vi": "Tức giận",
+      "id": "Marah",
+      "ms": "Marah",
+      "es": "Enojado",
+      "pt": "Zangado",
+      "ar": "غاضب"
+    }
+  }
+}

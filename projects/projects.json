@@ -1,0 +1,20 @@
+{
+  "test_drama": {
+    "project_id": "test_drama",
+    "project_title": "测试剧集",
+    "genre": "现代剧",
+    "description": "用于测试的演示项目",
+    "created_at": "2025-08-09T20:09:52.114411",
+    "updated_at": "2025-08-09T20:09:52.114411",
+    "status": "active"
+  },
+  "love_navy_blue": {
+    "project_id": "love_navy_blue",
+    "project_title": "爱上海军蓝",
+    "genre": "现代军旅剧",
+    "description": "现代海军军旅生活题材电视剧",
+    "created_at": "2025-08-09T20:46:53.814000",
+    "updated_at": "2025-08-09T20:46:53.814000",
+    "status": "active"
+  }
+}
