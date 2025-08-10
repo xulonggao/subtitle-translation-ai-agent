@@ -457,3 +457,60 @@ class TranslationBatch:
         
         total_score = sum(result["quality_score"] for result in self.results)
         return total_score / len(self.results)
+
+
+@dataclass
+class TranslationResult:
+    """翻译结果类"""
+    original_index: int
+    translated_text: str
+    target_language: str
+    success: bool = True
+    quality_score: float = 0.0
+    confidence: float = 0.0
+    processing_time_ms: int = 0
+    method: TranslationMethod = TranslationMethod.AGENT
+    error_message: Optional[str] = None
+    metadata: Optional[Dict[str, Any]] = None
+    timestamp: datetime = field(default_factory=datetime.now)
+    
+    def __post_init__(self):
+        if self.metadata is None:
+            self.metadata = {}
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """转换为字典"""
+        return {
+            "original_index": self.original_index,
+            "translated_text": self.translated_text,
+            "target_language": self.target_language,
+            "success": self.success,
+            "quality_score": self.quality_score,
+            "confidence": self.confidence,
+            "processing_time_ms": self.processing_time_ms,
+            "method": self.method.value,
+            "error_message": self.error_message,
+            "metadata": self.metadata,
+            "timestamp": self.timestamp.isoformat()
+        }
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'TranslationResult':
+        """从字典创建实例"""
+        result = cls(
+            original_index=data["original_index"],
+            translated_text=data["translated_text"],
+            target_language=data["target_language"],
+            success=data.get("success", True),
+            quality_score=data.get("quality_score", 0.0),
+            confidence=data.get("confidence", 0.0),
+            processing_time_ms=data.get("processing_time_ms", 0),
+            method=TranslationMethod(data.get("method", "agent")),
+            error_message=data.get("error_message"),
+            metadata=data.get("metadata", {})
+        )
+        
+        if "timestamp" in data:
+            result.timestamp = datetime.fromisoformat(data["timestamp"])
+        
+        return result

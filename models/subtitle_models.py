@@ -157,6 +157,11 @@ class SubtitleEntry:
     
     def calculate_duration(self) -> float:
         """计算显示时长（秒）"""
+        # 支持float类型的时间（已经是秒）
+        if isinstance(self.start_time, (int, float)) and isinstance(self.end_time, (int, float)):
+            return float(self.end_time - self.start_time)
+        
+        # 支持时间码对象
         start_ms = self.start_time.to_milliseconds()
         end_ms = self.end_time.to_milliseconds()
         return (end_ms - start_ms) / 1000.0
