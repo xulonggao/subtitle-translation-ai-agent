@@ -222,60 +222,40 @@ Agent版本: 2.0.0
 
 ## 🚀 快速开始
 
-### 1. 环境准备
+> 📖 **详细使用指南**: 完整的安装、配置和使用说明请参考 **[Quick Start Guide](docs/Quick_Start_Guide.md)**
+
+### ⚡ 三种快速启动方式
 
 ```bash
-# 克隆项目
-git clone <repository-url>
-cd subtitle-translation-system
+# 方法1: 使用快速开始脚本
+python docs/examples/quick_start.py
 
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate     # Windows
+# 方法2: 使用完整演示脚本
+python docs/examples/translate_example.py
 
-# 安装依赖
-pip install -r requirements.txt
+# 方法3: 仅测试Agent创建
+python docs/examples/translate_example.py test
 ```
 
-### 2. 配置环境变量
+### 🔧 基本环境配置
 
-```bash
-# 复制环境变量模板
-cp .env.example .env
+1. **AWS配置**
+   ```bash
+   aws configure
+   # 输入Access Key、Secret Key、区域(us-west-2)
+   ```
 
-# 编辑.env文件，配置AWS凭证
-AWS_ACCESS_KEY_ID=your_access_key
-AWS_SECRET_ACCESS_KEY=your_secret_key
-AWS_DEFAULT_REGION=us-west-2
-```
+2. **安装依赖**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### 3. 基础使用示例
+3. **运行示例**
+   ```bash
+   python docs/examples/quick_start.py
+   ```
 
-```python
-from strands_agents.subtitle_translation_agent import create_subtitle_translation_agent
-
-# 创建字幕翻译Agent
-agent = create_subtitle_translation_agent()
-
-# 基础翻译示例
-response = agent.run(
-    "请翻译这个SRT文件到英语，并进行文化本土化处理",
-    srt_content="""1
-00:00:01,000 --> 00:00:03,000
-现在的家长都在鸡娃，内卷太严重了
-
-2
-00:00:04,000 --> 00:00:06,000
-年轻人选择躺平，不想做社畜""",
-    target_language="en"
-)
-
-print(response.data)
-```
-
-### 4. 高级功能示例
+### 📚 更多功能
 
 ```python
 # 创作性翻译增强
@@ -303,194 +283,40 @@ response = agent.run(
 
 ## 📖 详细使用指南
 
-### 🎬 完整翻译流程示例
+> 📋 **完整文档**: 详细的使用说明、配置选项、API参考和故障排除请查看 **[Quick Start Guide](docs/Quick_Start_Guide.md)**
 
-以《爱上海军蓝》为例，展示完整的字幕翻译流程：
+### 📚 主要功能链接
+
+- **🚀 快速开始**: [三种启动方式](docs/Quick_Start_Guide.md#快速开始)
+- **⚙️ 环境配置**: [AWS配置和依赖安装](docs/Quick_Start_Guide.md#环境准备)
+- **📖 详细步骤**: [完整翻译流程](docs/Quick_Start_Guide.md#详细使用步骤)
+- **🎯 高级功能**: [批量翻译和策略优化](docs/Quick_Start_Guide.md#高级功能)
+- **🌍 语言支持**: [支持的语言列表](docs/Quick_Start_Guide.md#支持的语言)
+- **🔧 故障排除**: [常见问题解决](docs/Quick_Start_Guide.md#故障排除)
+- **🎉 成功案例**: [实际翻译效果](docs/Quick_Start_Guide.md#成功案例)
+
+### 💡 基础代码示例
 
 ```python
 from strands_agents.subtitle_translation_agent import create_subtitle_translation_agent
 
-# 1. 创建Agent实例
+# 创建Agent
 agent = create_subtitle_translation_agent()
 
-# 2. 解析SRT文件
-response = agent.run(
-    "请解析这个SRT文件",
-    file_path="examples/love_navy_blue_ep01.srt"
-)
-subtitle_data = response.data
+# 使用示例SRT文件进行翻译
+with open("docs/examples/example_subtitle.srt", "r", encoding="utf-8") as f:
+    srt_content = f.read()
 
-# 3. 分析故事上下文
-response = agent.run(
-    "请分析这部剧的故事背景和角色关系",
-    title="爱上海军蓝",
-    genre="浪漫军事剧",
-    characters=[
-        {"name": "张伟", "role": "海军队长", "personality": "严肃、负责任"},
-        {"name": "李小红", "role": "军医", "personality": "温柔、专业"}
-    ],
-    cultural_background="现代中国军旅生活"
-)
-context_info = response.data
-
-# 4. 执行上下文翻译
-response = agent.run(
-    "请基于故事上下文翻译这些字幕到英语",
-    subtitle_entries=subtitle_data['entries'],
+# 执行翻译
+result = agent.translate_subtitle_file(
+    srt_content=srt_content,
     target_language="en",
-    context=context_info,
-    translation_style="professional_military"
+    additional_context="现代军旅剧，包含军事术语和现代网络词汇"
 )
-translated_entries = response.data
 
-# 5. 文化本土化处理
-response = agent.run(
-    "请对翻译中的文化词汇进行本土化处理",
-    text=translated_entries,
-    target_language="en",
-    cultural_context='{"adaptation_level": "high", "target_culture": "western_military"}'
-)
-localized_entries = response.data
-
-# 6. 创作性翻译增强
-response = agent.run(
-    "请对浪漫对话场景进行创作性增强",
-    entries=localized_entries,
-    context='{"scene_type": "romantic", "emotion_level": "high"}',
-    style_config='{"style": "cinematic", "tone": "warm"}'
-)
-enhanced_entries = response.data
-
-# 7. 高级质量分析
-response = agent.run(
-    "请分析翻译质量",
-    original=subtitle_data['entries'],
-    translated=enhanced_entries,
-    target_language="en",
-    analysis_config='{"detailed": true, "include_suggestions": true}'
-)
-quality_report = response.data
-
-# 8. 一致性检查
-response = agent.run(
-    "请检查翻译一致性",
-    entries=enhanced_entries,
-    target_language="en",
-    check_config='{"auto_resolve": true, "check_all_types": true}'
-)
-consistency_report = response.data
-
-# 9. 字幕时长优化
-response = agent.run(
-    "请优化字幕显示时长",
-    entries=enhanced_entries,
-    target_language="en",
-    optimization_config='{"reading_speed": "normal", "auto_optimize": true}'
-)
-optimized_entries = response.data
-
-# 10. 术语管理
-response = agent.run(
-    "请管理和学习术语",
-    entries=optimized_entries,
-    target_language="en",
-    terminology_config='{"auto_learn": true, "check_consistency": true}'
-)
-terminology_report = response.data
-
-# 11. 导出最终SRT文件
-response = agent.run(
-    "请导出最终的SRT文件",
-    entries=optimized_entries,
-    output_path="output/love_navy_blue_ep01_en.srt",
-    format_config='{"encoding": "utf-8", "include_metadata": true}'
-)
-final_output = response.data
-
-print(f"翻译完成！输出文件: {final_output['file_path']}")
-print(f"质量分数: {quality_report['overall_score']:.2f}")
-print(f"一致性分数: {consistency_report['consistency_score']:.2f}")
-```
-
-### 🎯 单功能使用示例
-
-#### 文化本土化处理
-```python
-# 现代网络词汇本土化
-response = agent.run(
-    "请将这些现代网络词汇进行英语本土化",
-    text="现在的家长都在鸡娃，内卷太严重了，年轻人选择躺平",
-    target_language="en"
-)
-# 输出: "Now parents are all doing helicopter parenting, the rat race is too intense, young people choose to lie flat"
-```
-
-#### 创作性翻译增强
-```python
-# 浪漫场景创作性翻译
-response = agent.run(
-    "请对这个浪漫对话进行诗意风格的创作性翻译",
-    entries='[{"original": "我爱你，你是我的一切", "translated": "I love you, you are everything to me"}]',
-    context='{"scene_type": "romantic", "emotion_level": "high"}',
-    style_config='{"style": "poetic", "tone": "passionate"}'
-)
-# 输出: 增强的诗意表达版本
-```
-
-#### 高级质量分析
-```python
-# 7维度质量评估
-response = agent.run(
-    "请分析这个军事题材翻译的质量",
-    original='["雷达显示有敌机接近", "司令，请指示"]',
-    translated='["Radar shows enemy aircraft approaching", "Commander, please advise"]',
-    target_language="en"
-)
-# 输出: 详细的7维度质量报告
-```
-
-#### 字幕时长优化
-```python
-# 多语言阅读速度优化
-response = agent.run(
-    "请优化这些日语字幕的显示时长",
-    entries='[{"text": "これは日本語の字幕です", "start_time": 0.0, "end_time": 1.0}]',
-    target_language="ja",
-    optimization_config='{"reading_speed": "normal", "scene_type": "dialogue"}'
-)
-# 输出: 基于日语阅读习惯的时长优化建议
-```
-
-### 🔧 高级配置选项
-
-#### Agent配置
-```python
-# 创建自定义配置的Agent
-agent = create_subtitle_translation_agent(
-    primary_model="us.anthropic.claude-opus-4-20250514-v1:0",
-    fallback_model="us.anthropic.claude-3-7-sonnet-20250219-v1:0",
-    temperature=0.1,  # 控制创造性
-    max_tokens=4096   # 最大输出长度
-)
-```
-
-#### 批量处理
-```python
-# 批量处理多个SRT文件
-srt_files = [
-    "love_navy_blue_ep01.srt",
-    "love_navy_blue_ep02.srt",
-    "love_navy_blue_ep03.srt"
-]
-
-for srt_file in srt_files:
-    response = agent.run(
-        f"请翻译 {srt_file} 到英语，并进行完整的质量优化流程",
-        file_path=f"input/{srt_file}",
-        target_language="en",
-        full_pipeline=True  # 启用完整处理流程
-    )
-    print(f"{srt_file} 处理完成")
+if result["success"]:
+    print("翻译成功！")
+    print(result["exported_srt"][:200] + "...")
 ```
 
 ## ⚡ 性能特性
